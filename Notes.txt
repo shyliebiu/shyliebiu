@@ -1,0 +1,5 @@
+In XHTML, <br> <hr> <img> <input> <link> <meta> are used for non-shown contents. 
+
+Therefore, those tags should end with ' />'.
+
+For example, '<meta name="keywords" content="" />'.

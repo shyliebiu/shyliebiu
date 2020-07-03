@@ -1,0 +1,647 @@
+	html, body
+	{
+		height: 100%;  /* Define the height of element(s). */
+	}
+	
+	body
+	/* Set basic properties of elements within <body> on webpage. */
+	/* If the properties of elements in sub-controler are not specified, */
+	/* those properties will be controled by super-controler. */
+	{
+		margin: 0px;  /* Margin creates extra space around an element. */
+		padding: 0px; /* Padding creates extra space within an element. */
+		background: #202020;  /* Set the color of background RGB[32, 32, 32]. */
+		font-family: 'Source Sans Pro', sans-serif;  /* Set font type. */
+		font-size: 12pt;  /* Set font size. */
+		font-weight: 300; /* Set font weight such as bold or normal. */
+		color: #444444;   /* Set the color of element RGB[68, 68, 68]. */
+	}
+	
+	h1, h2
+	/* Use h1 to h6 elements only for headings. */
+	/* Do not use them just to make text bold or big! */
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 600;
+		color: #333333;  /* Set the color of element RGB[51, 51, 51]. */
+	}
+	
+	h3
+	/* Use h1 to h6 elements only for headings. */
+	/* Do not use them just to make text bold or big! */
+	{
+		margin-bottom: 0.1em;
+		font-weight: 600;
+		color: #333333;  /* Set the color of element RGB[51, 51, 51]. */
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	ol
+	{
+		padding: 0;
+		list-style: none;  /* No list style (-type, -position, -image). */
+	}
+	
+	ul.tpa
+	/* Set the properties of 1st list type. "tpa" can be changed to "1" or else. */
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.tpb
+	/* Set the properties of 2nd list type. "tpb" can be changed to "2" or else. */
+	{
+		list-style-position: outside;
+		list-style-type: disc;  /* Full-filled circle. */
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	/* Define a hyperlink! */
+	{
+		color: #2980b9;
+	}
+	
+	a:hover
+	/* IDK. */
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	/* Set the properties of class="container" of id="" of <div>. */
+	{
+		overflow: hidden;
+		/* Control content too big to fit into an area. */
+		/* hidden - overflowing content is set to be invisible. */
+		margin: 0em auto;  /* Top and bottom - 0em, left and right - auto. */
+		width: 1200px;
+	}
+	
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+		margin: 0 auto;
+		padding: 0;
+		width: 80%;
+		overflow: hidden;
+		list-style: none;
+		text-align: left;
+		color: #6c6c6c
+	}
+	
+	ul.style1 li
+	{
+		padding: 1.6em 0em 0em 0em;
+		margin: 0 0 2.5em 0;
+		border-top: 1px solid rgba(0,0,0,.1); 
+	}
+	
+	ul.style1 li:first-child
+	{
+		border-top: none;
+	}
+	
+	ul.style1 p
+	{
+		margin: 0;
+	}
+	
+	ul.style1 a
+	{
+		display: block;
+		text-decoration: none;
+		color: #2D2D2D;
+	}
+	
+	ul.style1 a:hover
+	{
+		text-decoration: underline;
+	}
+	
+	ul.style1 h3
+	{
+		padding: 1em 0em 5px 0em;
+		text-transform: uppercase;
+		font-size: 1em;
+		font-weight: 400;
+	}
+	
+	ul.style1 .first
+	{
+		padding-top: 0;
+		background: none;
+	}
+	
+	ul.style1 .date
+	{
+		float: left;
+		position: relative;
+		width: 80px;
+		height: 70px;
+		margin: 0.5em 1.5em 0em 0.5em;
+		padding: 1.5em 0em 1.5em 0em;
+		box-shadow: 0px 0px 0px 5px rgba(255,255,255,0.1);
+		line-height: normal;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 0px 1px 0px rgba(0,0,0,.2);
+		font-size: 1em;
+		font-weight: 400;
+		border-right: 1px solid rgba(0,0,0,.1); 
+	}
+	
+	ul.style1 .date:after
+	{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 6px;
+	}
+	
+	ul.style1 .date b
+	{
+		margin: 0;
+		padding: 0;
+		display: block;
+		margin-top: -5px;
+		font-size: 1.8em;
+		font-weight: 700;
+	}
+	
+	ul.style1 .date a
+	{
+	}
+	
+	ul.style1 .date a:hover
+	{
+		text-decoration: none;
+	}
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 2em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.30em;
+		font-size: 1em;
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #3f3f3f;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+	ul.contact li a.icon-facebook:before { background: #39599F; }
+	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+	ul.contact li a.icon-tumblr:before { background: #31516A; }
+	ul.contact li a.icon-rss:before { background: #F2600B; }
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		padding: 1em 3em 1em 2em;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 0.90em;
+		color: #FFF;
+	}
+	
+	.button:before
+	{
+		display: inline-block;
+		background: #FFC31F;
+		margin-right: 1em;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #272925;
+	}
+		
+/*********************************************************************************/
+/* 4-column                                                                      */
+/*********************************************************************************/
+
+	.box1,
+	.box2,
+	.box3,
+	.box4
+	{
+		width: 235px;
+	}
+	
+	.box1,
+	.box2,
+	.box3,
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.box4
+	{
+		float: right;
+	}
+	
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+	.boxA,
+	.boxB,
+	.boxC
+	{
+		width: 320px;
+	}
+
+	.boxA,
+	.boxB,
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.boxC
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* 2-column                                                                      */
+/*********************************************************************************/
+
+	.tbox1,
+	.tbox2
+	{
+		width: 575px;
+	}
+	
+	.tbox1
+	{
+		float: left;
+	}
+
+	.tbox2
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		
+	}
+	
+	.title h2
+	{
+    		margin-bottom: 1.5em;
+		font-size: 2.2em;
+		text-align: center;
+	}
+
+	.title h3
+	{
+    		margin-top: 0.5em;
+    		margin-bottom: 0.3em;
+		font-size: 1.3em;
+		text-align: left;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.3em;
+		color: #6F6F6F;
+	}
+		
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;  /* Element is centered in one row. */
+		float: left;  /* Set element to be floated on left side. */
+		width: 300px;
+		padding: 3em 0em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		text-align: center;  /* Set the alignment of text. */
+		margin-bottom: 2.5em;
+	}
+	
+	#logo h1
+	{
+		display: block;  /* Display the element on a new line. */
+		font-size: 1.5em;
+		/* color: rgba(255,255,255,0.1); */  /* Closely to white. */
+		color: #FFF;
+		padding-bottom: 0.5em;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;  /* Define the decoration to text. */
+		color: #FFF;  /* Set the color of element [255, 255, 255]. */
+	}
+	
+	#logo span
+	/* <span> is used to group inline-elements or text. */ 
+	{
+		padding-right: 0.5em;
+		font-size: 0.90em;
+		color: rgba(255,255,255,0.5);  /* Closely to white. */
+		padding-bottom: 0.3em;
+	}
+
+	#logo span a
+	{
+		color: rgba(255,255,255,0.5);
+	}
+	
+	#logo img
+	{
+		display: inline-block;  /* Element is blocked inline but has width and height. */
+		margin-bottom: 1em;
+		border-radius: 50%;  /* Set element with rounded border! */
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+	}
+	
+	#menu ul
+	{
+	}
+	
+	#menu li
+	{
+		border-top: 1px solid rgba(255,255,255,0.08);
+		/* Set the top border properties. */
+		/* 1px - height of border. */
+		/* solid - line style of border. */
+		/* rgba - color of border. */
+	}
+	
+	#menu li a, #menu li span
+	{
+		display: block;
+		padding: 1.0em 1.0em;
+		text-align: center;
+		text-decoration:  none;
+		list-style: none;  /* Set none bullet!!! */
+		font-weight: 700;
+    		font-size: 1.1em;
+		color: rgba(255,255,255,0.5);
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+	
+	#menu .current_page_item a
+	{
+		background: #2980b9;  /* Set clicked block BG color to be blue. */
+		color: rgba(255,255,255,1);  /* Set clicked block TXT color to be white. */
+	}
+	
+	#menu .icon
+	{
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		margin-bottom: 4em;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+		background: #2a2a2a;  /* Set the color of page BG [42, 42, 42]. */
+	}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		overflow: hidden;
+		float: right;
+		width: 800px;
+		padding: 3em 50px 3em 50px;
+		background: #FFF;
+		border-top: 6px solid #2980b9;  /* Top border - Blue. */
+		text-align: left;
+	}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+		overflow: hidden;
+		margin-bottom: 3em;
+		padding-top: 5em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+	}
+
+/*********************************************************************************/
+/* Reference                                                                     */
+/*********************************************************************************/
+
+	#reference
+	{
+	}
+	
+	#reference ul
+	{
+		margin-left=3.0em
+		list-style-position: outside;
+		list-style-type: disc;  /* Full-filled circle. */
+	}
+	
+	#reference li /*tbc*/
+	{
+		display: block;
+		padding: none;
+		line-height: 1.2em;
+    		font-size: 1.1em;
+	}
+	
+	#reference li a
+	{
+		display: block;
+		padding: none;
+    		font-size: 1.1em;
+		color: #2980b9;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding-bottom: 2em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+	
+	#copyright span
+	{
+		display: block;
+		letter-spacing: 0.10em;
+		line-height: 2.5em;
+		text-align: center;
+		font-size: 0.80em;
+		color: rgba(0,0,0,0.6);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(0,0,0,0.75);
+	}
+
+	.fa
+	{
+		display: block;
+		color: #000;
+		background: red;
+	}
+
